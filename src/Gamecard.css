@@ -1,0 +1,162 @@
+
+.gamecard {
+  position: relative;
+  width: 310px;
+  height: 230px;
+  background: #fff;
+  border-radius: 18px;
+  margin: 40px 20px;
+  padding: 20px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.35);
+  transition: 0.3s ease-in-out;
+  overflow: visible;
+}
+
+.gamecard:hover {
+  height: 340px;
+}
+
+/* Floating Image */
+.gamecard-image {
+  width: 260px;
+  height: 260px;
+  position: absolute;
+  top: -40%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+}
+
+.gamecard-image img {
+  width: 100%;
+  border-radius: 15px;
+}
+
+/* Hidden Content */
+.gamecard-content {
+  margin-top: 150px;
+  padding: 10px 5px;
+  text-align: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s ease-in-out;
+}
+
+.gamecard:hover .gamecard-content {
+  opacity: 1;
+  visibility: visible;
+  margin-top: 170px;
+  transition-delay: 0.2s;
+}
+
+.gamecard-content h3 {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+/*button css*/
+.game-btn {
+  padding: 12px 28px;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  width: 80%;
+
+  /* Gradient */
+  background: linear-gradient(135deg, #dc369a, #ed7c1a);
+
+  /* Text */
+  color: white;
+  letter-spacing: 0.5px;
+
+  /* Glow effect */
+  box-shadow: 0 0 12px rgba(255, 120, 180, 0.4),
+              0 0 24px rgba(255, 150, 80, 0.2);
+
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Hover effect */
+.game-btn:hover {
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 0 18px rgba(255, 120, 180, 0.8),
+              0 0 32px rgba(255, 150, 80, 0.6);
+}
+
+/* Active (click) effect */
+.game-btn:active {
+  transform: scale(0.95);
+  box-shadow: 0 0 10px rgba(255, 120, 180, 0.4);
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .game-btn {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+}
+
+
+/* Card wrapper */
+.card-container {
+  width: 350px;
+  height: 400px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+/* Hide cards not active */
+.hidden {
+  display: none;
+}
+
+/* Active card is visible */
+.active {
+  display: block;
+}
+
+/* Slider arrows */
+.arrow {
+  font-size: 40px;
+  color: #fff;
+   text-shadow:
+    0 0 5px #0ff,
+    0 0 10px #0ff,
+    0 0 20px #0ff,
+    0 0 40px #0ff;
+
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  transition: 0.2s ease;
+}
+
+.arrow:hover {
+  transform: scale(1.2);
+}
+
+.left {
+  margin-right: 20px;
+}
+
+.right {
+  margin-left: 20px;
+}
+
+/* Wrapper to center slider */
+.slider-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}

@@ -1,0 +1,18 @@
+.stroop-home { text-align: center; padding: 40px; font-family: sans-serif; color: white; }
+.title { font-size: 2.4rem; font-weight: 800; }
+.subtitle { margin-top: -10px; opacity: 0.9; }
+.preview-word { font-size: 3rem; margin-top: 20px; }
+.play-now-btn {
+  padding: 15px 40px; font-size: 1.3rem; font-weight: bold; margin: 20px 0;
+  cursor: pointer; border: none; border-radius: 12px;
+  background: linear-gradient(135deg, #ff6ec4, #ff9f4a); color: white;
+}
+.modes p { margin: 12px 0; font-size: 1.1rem; opacity: 0.95; }
+
+.stroop-game { text-align: center; padding: 40px; color: white; }
+.stroop-word { font-size: 4rem; margin: 30px 0; font-weight: 800; }
+.options { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; }
+.option-btn { padding: 12px 22px; font-size: 1.2rem; border: none; cursor: pointer; border-radius: 10px; background: #eee; }
+.timer { margin-top: 6px; opacity: 0.9; }
+
+.end-screen button { padding: 10px 20px; font-size: 1.1rem; border: none; border-radius: 8px; margin-top: 20px; cursor: pointer; background: #333; color: white; }

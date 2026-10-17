@@ -1,0 +1,122 @@
+.brainup-header {
+
+   background: transparent;
+  text-align: center;
+  padding: 60px 20px;
+  border-radius: 20px;
+  position: relative;
+  overflow: visible;
+}
+
+/* Profile Button (Top Left) */
+.profile-btn {
+  position: relative;
+  top: -80px;
+  width: 80%;
+  border: #007bff;
+  border-style: dashed;
+  left: 10px;
+  background: rgba(white, rgb(218, 217, 217), rgb(171, 171, 186), 0.1);
+  padding: 10px 15px;
+  border-radius: 50px;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 200px;
+  bottom: 50px;
+
+
+}
+.space{
+  padding-bottom: 40px;
+}
+
+/* Gradient Icon Circle */
+.logo-circle {
+  
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #ff00cc, #7f00ff);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+
+}
+
+.brain-icon {
+  padding-bottom: 10px;
+  font-size: 20px;
+}
+
+/* Title */
+.brain-title {
+  padding-top: 30px;
+  font-size: 4rem;
+  margin: 0;
+  font-weight: 900;
+  letter-spacing: 3px;
+}
+
+.gradient-text {
+  background: linear-gradient(90deg, #ff4b9f, #a900ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gradient-text2 {
+  background: linear-gradient(90deg, #007bff, #00d5ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Cute underline bars */
+.underline-wrap {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: -10px;
+}
+
+.underline {
+  width: 120px;
+  height: 12px;
+  border-radius: 10px;
+}
+
+.pink {
+  background: linear-gradient(90deg, #ff4b9f, #ff8bcf);
+}
+
+.blue {
+  background: linear-gradient(90deg, #0099ff, #00e0ff);
+}
+
+/* Tagline */
+.tagline {
+  margin-top: 15px;
+  font-size: 1.2rem;
+  color: #5d4bcd;
+  font-weight: 600;
+  margin-bottom: 50px;
+}
+.pulse-glow {
+  width: 100%;
+  height: 4px;
+  background: #00ff8c;
+  border-radius: 10px;
+  animation: pulse 1.5s infinite alternate;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 5px #00ff8c;
+  }
+  100% {
+    box-shadow: 0 0 20px #00ff8c, 0 0 40px #00ff8c;
+  }
+}

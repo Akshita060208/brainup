@@ -1,0 +1,104 @@
+/* SCOREBOARD WRAPPER */
+.scoreboard {
+  max-width: 750px;
+  margin: 60px auto;
+  background: #ffffff;
+  padding: 30px 40px;
+  border-radius: 14px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.12);
+  animation: fadeIn 0.4s ease-in-out;
+}
+
+/* HEADINGS */
+.scoreboard h1 {
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 32px;
+  font-weight: 700;
+  color: #222;
+}
+
+.scoreboard h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 22px;
+  font-weight: 600;
+  color: #444;
+}
+
+/* TABLE */
+.scoreboard table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+  overflow: hidden;
+  border-radius: 10px;
+  background: #fafafa;
+  box-shadow: inset 0px 0px 4px rgba(0, 0, 0, 0.08);
+}
+
+/* TABLE HEAD */
+.scoreboard thead {
+  background: #4b7bff; 
+  color: white;
+}
+
+.scoreboard th {
+  padding: 14px;
+  font-size: 15px;
+  letter-spacing: 0.4px;
+  text-align: left;
+}
+
+/* TABLE ROWS */
+.scoreboard td {
+  padding: 12px 14px;
+  font-size: 14px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+/* HOVER EFFECT */
+.scoreboard tbody tr:hover {
+  background: rgba(75, 123, 255, 0.1);
+  transition: 0.2s ease-in-out;
+}
+
+/* LAST ROW BORDER FIX */
+.scoreboard tbody tr:last-child td {
+  border-bottom: none;
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+  .scoreboard {
+    padding: 20px;
+    margin: 20px;
+  }
+
+  .scoreboard table,
+  .scoreboard thead {
+    display: block;
+  }
+
+  .scoreboard tr {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .scoreboard th {
+    display: none;
+  }
+
+  .scoreboard td {
+    padding: 8px;
+    font-size: 13px;
+  }
+}
+
+/* SMOOTH APPEAR ANIMATION */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0px); }
+}
